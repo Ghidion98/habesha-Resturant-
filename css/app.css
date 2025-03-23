@@ -1,0 +1,369 @@
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+}
+body {
+   font-size: 1.6em;
+   width: 100%;
+   background: #aaa;
+   font-family: Arial, sans-serif;
+}
+#mobMen {
+   position: fixed;
+   z-index: 5;
+   top: 29px;
+   right: 13px;
+   width: 90px;
+   height: 80px;
+   padding: 5px 10px;
+ }
+   .bar {
+     width: 50px;
+     height: 14px;
+     margin: 5px 0;
+     background: #bbb7b7;
+     border-radius: 4px;
+     cursor: pointer;
+   }
+ #menu {
+   position: fixed;
+   z-index: 4;
+   width: 160px;
+   height: 100vh;
+   top: 0;
+   right: -260px;
+   padding-top: 110px;
+   padding-left: 18px;
+   background: #000;
+   font-size: .9em;
+   font-family: "Press Start 2P", system-ui;
+   font-weight: 400;
+   font-style: normal;
+ }
+   #menu > a {
+     display: block;
+     margin: 33px 0;
+   }
+   #menu > a {
+     text-decoration: none;
+     color: #fff;
+   }
+   #menu > a:hover {
+     text-decoration: underline;
+     color: #f00;
+   }
+#grid {
+   display: grid;
+   width: 100%;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+      "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+      "abt abt abt abt abt abt rec rec rec rec rec rec"
+      "gal gal gal gal gal gal gal gal gal gal gal gal"
+      "ser ser ser ser ser ser ser ser ser ser ser ser"
+      "con con con con con con con con con con con con"
+      "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+}
+
+header {
+   display: grid;
+   grid-area: hdr;
+   width: 100%;
+   height: 700px;
+   background: url(../assets/images/header1.png) no-repeat center center;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+}
+
+#logo {
+   width: 100px;
+   border-radius: 50%;
+   margin-top: 20px;
+   margin-left: 10px;
+}
+
+h1 {
+   font-size: 2.5em;
+   color: #fff;
+   text-align: center;
+   margin-top: 60px; 
+   z-index: 3;
+   position: relative;
+   font-family: 'Arial', sans-serif;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#about {
+   grid-area: abt;
+   background-color: #fff;
+   text-align: center;
+   border-bottom: 1px solid #333;
+   padding: 20px;
+}
+
+#about > h1 {
+   color: #3f3535;
+   font-size: 1.6em;
+   text-align: left;
+   margin-left: 20px;
+   margin-top: 0; 
+}
+
+#about > p {
+   line-height: 1.3;
+   margin-top: 10px; 
+}
+#recipes {
+   grid-area: rec;
+   background-color: #f9f9f9;
+   border-bottom: 1px solid #333;
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+   gap: 20px; 
+}
+
+.food {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.food p {
+   font-size: 1.2em;
+   margin-top: 10px;
+}
+
+#gallery {
+   grid-area: gal;
+   background: #f9f9f9;
+   padding: 20px;
+   border-bottom: 1px solid #333;
+}
+
+#gallery > h1 {
+   color: #333;
+   text-align: left;
+   margin-bottom: 10px; 
+}
+#gallery .images {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+}
+
+#gallery img {
+   width: 100%;
+   border-radius: 10px;
+}
+.name {
+   text-align: center;
+   background-color: rgba(252, 250, 250, 0.5);
+   margin-top: 5px;
+}
+.price {
+   bottom: 10px;
+   left: 50%;
+   transform: translatey(-50%);
+   background-color: rgba(161, 155, 155, 0.5);
+   color: #080101;
+   padding: 0 15px;
+   margin-top: 11px;
+   text-align: center;
+   font-size: .9em;
+   border-radius: 5px;
+}
+
+h1 {
+   margin-bottom: 10px;
+}
+
+#services {
+   grid-area: ser;
+   background-color: #f4f4f4;
+   padding: 60px 20px;
+   border-bottom: 1px solid #333;
+   text-align: left;
+}
+
+#services > h1 {
+   color: #333;
+   font-size: 2.8em;
+   text-align: left;
+   margin-bottom: 20px; 
+}
+
+#services > p {
+   margin-top: -10px; 
+}
+
+.delivery {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.delivery-item {
+   text-align: center;
+}
+
+.delivery-item img {
+   width: 80px;
+   height: 80px;
+}
+
+.delivery-item p {
+   font-size: 1.2em;
+}
+#contact {
+   grid-area: con;
+   background-color: #f9f9f9;
+   padding: 40px;
+   width: 100%;
+   margin: auto;
+   height: 100%;
+}
+
+#contact-container {
+   display: grid;
+   grid-template-columns: 1fr 1.2fr;
+   gap: 40px;
+   align-items: start;
+   height: 500px;
+}
+
+#contact-form {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   height: 100%; 
+}
+
+#contact-form form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+#contact-form label {
+   font-size: 1.2em;
+   color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+   padding: 10px;
+   font-size: 1em;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+#contact-form button {
+   padding: 12px;
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   font-size: 1.2em;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background 0.3s;
+}
+
+#contact-form button:hover {
+   background-color: #0056b3;
+}
+
+#map {
+   width: 100%;
+   height: 500px;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+   grid-area: ftr;
+   text-align: center;
+   padding: 20px;
+   background-color: #333;
+   color: #fff;
+}
+@media (min-width: 640px) {
+   #mobMen {
+      width: 90px;
+      height: 90px;
+      top: 20px;
+      right: 20px;
+   }
+
+   .bar {
+      width: 80px;
+      height: 16px;
+   }
+
+   #menu {
+      width: 100px;
+      right: -300px;
+      padding-top: 120px;
+   }
+
+   #grid {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 
+         "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+         "abt abt abt abt abt abt rec rec rec rec rec rec"
+         "gal gal gal gal gal gal gal gal gal gal gal gal"
+         "ser ser ser ser ser ser ser ser ser ser ser ser"
+         "con con con con con con con con con con con con"
+         "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+   }
+
+   header {
+      height: 650px;
+   }
+
+   h1 {
+      font-size: 3em;
+      margin-top: 20px;
+   }
+
+   #about, #recipes, #gallery, #services, #contact {
+      padding: 40px;
+   }
+
+   #gallery .images {
+      grid-template-columns: repeat(3, 1fr);
+   }
+   #contact-container {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   #contact-form input, #contact-form textarea {
+      font-size: 1em;
+      padding: 5px;
+   }
+
+   #contact-form button {
+      font-size: 1em;
+   }
+   #map {
+      width: 100%; 
+      height: 100%; 
+   }
+}
+
+

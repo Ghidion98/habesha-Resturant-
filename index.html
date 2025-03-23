@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Eri Foods</title>
+   <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+   <div id="mobMen" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+   </div>
+   <div id="menu">
+      <a href="#about" title="about" onclick="toggleMenu()">About</a>
+      <a href="#recipes" title="recipes" onclick="toggleMenu()">Recipes</a>
+      <a href="#gallery" title="gallery" onclick="toggleMenu()">Gallery</a>
+      <a href="#services" title="services" onclick="toggleMenu()">Service</a>
+      <a href="#contact" title="contact" onclick="toggleMenu()">Contact</a>
+   </div>
+   <div id="grid">
+      <header>
+         <img src="assets/images/habe8.png" alt="LOGO" id="logo">
+         <h1>Habesha Restaurant</h1>
+      </header>
+      <div id="about"></div>
+      <div id="recipes"></div>
+      <div id="gallery"></div>
+      <div id="services"></div>
+      <div id="contact"></div>
+      <div id="about">
+         <h1>About Us</h1>
+         <p>Habesha Restaurant offers an authentic and vibrant taste of Eritrean and Ethiopian cuisine. We are welcoming and warm atmosphere, our restaurant invites you to experience the rich culinary traditional of the Horn of Africa.
+            Our menu features an array of flavorful dishes, made from the finest ingredients, and prepared with love and passion. From savory stews like Doro Wat (spicy chicken stew) to T'ej (honey wine), every bite at Habesha Restaurant transports you to the heart of Eritrean and Ethiopian culture. We specialize in traditional dishes like Injera, Kitfo, and Shiro, ensuring every meal is a celebration of heritage and flavor.
+            Whether you're enjoying a casual meal with friends or celebrating a special occasion, our restaurant is the perfect destination for those who appreciate bold, diverse, and mouthwatering food.
+         </p>
+      </div>
+      <div id="recipes">
+         <p>
+            Visit our restaurant to enjoy a variety of delicious dishes, prepared
+            with the finest ingredients and traditional recipes.
+         </p>
+         <div class="food">
+            <img src="assets/images/fata.png" alt="Bfast">
+            <p>Fata</p>
+         </div>
+         <div class="food">
+            <img src="assets/images/full.png" alt="Bfast">
+            <p>Masalah</p>
+         </div>
+         <div class="food">
+            <img src="assets/images/shirro.png" alt="Lunch">
+            <p>Shiro</p>
+         </div>
+         <div class="food">
+            <img src="assets/images/habe.png" alt="Lunch">
+            <p>Alcha</p>
+         </div>
+         <div class="food">
+            <img src="assets/images/habe1.png" alt="Lunch">
+            <p>Kitfo</p>
+         </div>
+         
+      </div>
+      <div id="gallery">
+         <h1>Menu</h1>
+         <div class="images">
+            <div class="image-item">
+               <img src="assets/images/coff2.png" alt="Coffee">
+               <div class="name">Coffee</div>
+               <div class="price">$5.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/fata1.png" alt="Habe7">
+               <div class="name">speFa</div>
+               <div class="price">$14.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/shirro.png" alt="Shiro">
+               <div class="name">mix</div>
+               <div class="price">$16.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/habe6.png" alt="Habe6">
+               <div class="name">sause</div>
+               <div class="price">$43.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/hmba.png" alt="Habe3">
+               <div class="name">hmbasha</div>
+               <div class="price">$7.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/habe1.png" alt="Habe1">
+               <div class="name">zuku</div>
+               <div class="price">$38.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/zigni1.png" alt="Zign">
+               <div class="name">Dero</div>
+               <div class="price">$32.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/enjera.png" alt="Full">
+               <div class="name">Enjera</div>
+               <div class="price">$59.99</div>
+            </div>
+            <div class="image-item">
+               <img src="assets/images/kitffo.png" alt="Fata">
+               <div class="name">Kitffo</div>
+               <div class="price">$35.49</div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="services">
+         <h1>Our Services</h1>
+         <p>
+            At Habesha restaurant, we offer a variety of services to make your dining experience as enjoyable as possible. Our friendly staff is always ready to assist you with any 
+            questions or concerns you may have. We also offer catering services for special events, so you can enjoy our delicious dishes at your next party or gathering.
+            We have a special food delivery service for those who prefer to enjoy our food in their own home.
+         </p>
+         <div class="delivery">
+            <div class="delivery-item">
+               <img src="assets/images/deli.png" alt="Delivery Ride">
+               <p>Car Delivery </p>
+            </div>
+            <div class="delivery-item">
+               <img src="assets/images/deliv 1.png" alt="Delivery Bike">
+               <p>Bike Delivery </p>
+            </div>
+         </div>
+      </div>
+      <div id="contact">
+         <h2>Contact Us</h2>
+         <div id="contact-container">
+            <div id="contact-form">
+               <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+      
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+      
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+      
+                  <button type="submit">Send Message</button>
+               </form>
+            </div>
+            <div id="map">
+               <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.814234702228!2d-79.3307456845007!3d43.68243237912009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb3c3c7a5e6d%3A0x1e0a3b9b8f9c3d0!2sWazema%20Ethiopian%20Restaurant!5e0!3m2!1sen!2sca!4v1610000000000!5m2!1sen!2sca" 
+                  height="400" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+               </iframe>
+            </div>
+         </div>
+      </div>   
+   </div>
+   <footer>
+      &copy; 2025 Habesha Res.
+   </footer>
+   <script src="scripts/jquery.js"></script>
+   <script src="scripts/app.js"></script>
+</body>
+</html>
